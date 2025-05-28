@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Busy Day Schedule</title>
+<style>
+  /* Style the whole table */
+  table {
+    width: 70%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
 
+  /* Style the table headers */
+  th {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 1.2em;
+  }
+
+  /* Style all table cells */
+  td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  /* Style one specific row (e.g., the 4th row) */
+  tr.special-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+
+  /* Style the time column text in pink */
+  td.time-column {
+    color: pink;
+    font-weight: 600;
+    width: 150px;
+  }
+
+  /* Style the event column text in light blue */
+  td.event-column {
+    color: #87CEFA; /* light blue */
+  }
+
+  /* Alternate row coloring */
+  tr:nth-child(even):not(.special-row) {
+    background-color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+  <h1 style="text-align:center; font-family: Arial, sans-serif;">My Busy Day Schedule</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-column">6:00 a.m.</td>
+        <td class="event-column">Wake up</td>
+      </tr>
+      <tr>
+        <td class="time-column">6:10 a.m.</td>
+        <td class="event-column">Morning chores</td>
+      </tr>
+      <tr>
+        <td class="time-column">6:15 a.m.</td>
+        <td class="event-column">Breakfast: coffee and cereal</td>
+      </tr>
+      <tr class="special-row">
+        <td class="time-column">6:25 a.m.</td>
+        <td class="event-column">Get dressed</td>
+      </tr>
+      <tr>
+        <td class="time-column">6:40 a.m.</td>
+        <td class="event-column">Preparation before the exam</td>
+      </tr>
+      <tr>
+        <td class="time-column">8:00 a.m.</td>
+        <td class="event-column">Taxi to exam</td>
+      </tr>
+      <tr>
+        <td class="time-column">9:00 a.m. - 12:00 p.m.</td>
+        <td class="event-column">The exam</td>
+      </tr>
+      <tr>
+        <td class="time-column">12:15 p.m. - 1:00 p.m.</td>
+        <td class="event-column">Trip home</td>
+      </tr>
+      <tr>
+        <td class="time-column">1:30 p.m. - 3:00 p.m.</td>
+        <td class="event-column">Tutor session</td>
+      </tr>
+      <tr>
+        <td class="time-column">3:00 p.m. - 4:00 p.m.</td>
+        <td class="event-column">Get dressed and get ready</td>
+      </tr>
+      <tr>
+        <td class="time-column">5:00 p.m. - 6:30 p.m.</td>
+        <td class="event-column">Dance classes</td>
+      </tr>
+      <tr>
+        <td class="time-column">7:00 p.m. - 7:20 p.m.</td>
+        <td class="event-column">Trip home</td>
+      </tr>
+      <tr>
+        <td class="time-column">7:30 p.m.</td>
+        <td class="event-column">Dinner</td>
+      </tr>
+      <tr>
+        <td class="time-column">8:00 p.m. - 9:00 p.m.</td>
+        <td class="event-column">Preparation for next exam</td>
+      </tr>
+      <tr>
+        <td class="time-column">9:00 p.m.</td>
+        <td class="event-column">Take a shower</td>
+      </tr>
+      <tr>
+        <td class="time-column">9:30 p.m.</td>
+        <td class="event-column">Call friends</td>
+      </tr>
+      <tr>
+        <td class="time-column">11:00 p.m.</td>
+        <td class="event-column">Sleep</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
